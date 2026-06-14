@@ -4,6 +4,11 @@ import { useState, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '@/lib/auth';
 import { api, ApiError } from '@/lib/api';
+import {
+  CraftsmanIllustration,
+  ArtisanPortraitIllustration,
+  ArtisanStitchingIllustration,
+} from '@/components/illustrations';
 
 const LGAS = [
   'Aba North',
@@ -123,7 +128,10 @@ export default function RegisterPage() {
   }
 
   return (
-    <div className="flex flex-1 items-center justify-center bg-zinc-50 px-6 py-16">
+    <div className="mx-auto flex w-full max-w-4xl flex-1 flex-col items-center justify-center gap-10 px-6 py-16 lg:flex-row lg:gap-16">
+      {step === 'account' && <CraftsmanIllustration className="hidden w-full max-w-xs shrink-0 lg:block" />}
+      {step === 'confirm' && <ArtisanPortraitIllustration className="hidden w-full max-w-xs shrink-0 lg:block" />}
+      {step === 'profile' && <ArtisanStitchingIllustration className="hidden w-full max-w-xs shrink-0 lg:block" />}
       <div className="w-full max-w-md rounded-lg border border-zinc-200 bg-white p-8 shadow-sm">
         <h1 className="mb-6 text-2xl font-bold text-zinc-900">
           {step === 'account' && 'Create your account'}

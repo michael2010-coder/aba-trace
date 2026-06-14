@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { PackagePlusIcon, QrCodeIcon, ShieldCheckIcon } from "@/components/icons";
-import { CraftsmanIllustration, PassportIllustration, VerifyScanIllustration } from "@/components/illustrations";
+import { CraftsmanIllustration, PassportIllustration, ArtisanHandoffIllustration } from "@/components/illustrations";
 
 export default function Home() {
   return (
@@ -98,7 +98,7 @@ export default function Home() {
 
       <section className="bg-zinc-50">
         <div className="mx-auto grid w-full max-w-5xl gap-12 px-6 py-16 sm:py-20 lg:grid-cols-2 lg:items-center">
-          <VerifyScanIllustration className="mx-auto w-full max-w-xs lg:order-2" />
+          <ArtisanHandoffIllustration className="mx-auto w-full max-w-sm lg:order-2" />
           <div className="flex flex-col items-center gap-4 text-center lg:order-1 lg:items-start lg:text-left">
             <h2 className="text-2xl font-bold text-zinc-900 sm:text-3xl">Built on trust, verified instantly</h2>
             <p className="max-w-md text-zinc-600">

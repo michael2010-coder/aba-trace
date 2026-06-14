@@ -4,6 +4,7 @@ import { useEffect, useState, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '@/lib/auth';
 import { api, ApiError } from '@/lib/api';
+import { ArtisanStitchingIllustration, PassportIllustration } from '@/components/illustrations';
 
 interface CreatedPassport {
   passportId: string;
@@ -61,6 +62,7 @@ export default function NewPassportPage() {
   if (created) {
     return (
       <div className="mx-auto flex w-full max-w-md flex-1 flex-col items-center gap-6 px-6 py-16 text-center">
+        <PassportIllustration className="h-40 w-40" />
         <h1 className="text-2xl font-bold text-zinc-900">Passport created</h1>
         {/* eslint-disable-next-line @next/next/no-img-element -- presigned S3 URL, not a static asset */}
         <img src={created.qrCodeUrl} alt="QR code" className="h-64 w-64 rounded border border-zinc-200" />
@@ -85,7 +87,8 @@ export default function NewPassportPage() {
   }
 
   return (
-    <div className="flex flex-1 items-center justify-center bg-zinc-50 px-6 py-16">
+    <div className="mx-auto flex w-full max-w-4xl flex-1 flex-col items-center justify-center gap-10 bg-zinc-50 px-6 py-16 lg:flex-row lg:gap-16">
+      <ArtisanStitchingIllustration className="hidden w-full max-w-xs shrink-0 lg:block" />
       <div className="w-full max-w-md rounded-lg border border-zinc-200 bg-white p-8 shadow-sm">
         <h1 className="mb-6 text-2xl font-bold text-zinc-900">Create a new passport</h1>
 

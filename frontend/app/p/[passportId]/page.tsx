@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import { config } from '@/lib/config';
 import VerifyButton from './VerifyButton';
 import { PackageIcon, ShieldCheckIcon } from '@/components/icons';
+import { ArtisanHandoffIllustration } from '@/components/illustrations';
 
 interface PassportView {
   passportId: string;
@@ -35,6 +36,7 @@ export default async function PublicPassportPage({
 
   return (
     <div className="mx-auto w-full max-w-lg flex-1 px-6 py-12">
+      <ArtisanHandoffIllustration className="mx-auto mb-6 w-full max-w-sm" />
       <div className="rounded-lg border border-zinc-200 bg-white p-6 shadow-sm">
         <div className="mb-4 flex items-start justify-between gap-3">
           <div className="flex items-start gap-3">

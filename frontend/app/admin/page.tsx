@@ -4,6 +4,7 @@ import { useEffect, useState, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '@/lib/auth';
 import { api } from '@/lib/api';
+import { AdminReviewIllustration } from '@/components/illustrations';
 
 interface Artisan {
   artisanId: string;
@@ -101,7 +102,13 @@ export default function AdminPage() {
 
   return (
     <div className="mx-auto w-full max-w-3xl flex-1 px-6 py-12">
-      <h1 className="mb-8 text-2xl font-bold text-zinc-900">Admin dashboard</h1>
+      <div className="mb-8 flex items-center justify-between gap-6">
+        <div>
+          <h1 className="text-2xl font-bold text-zinc-900">Admin dashboard</h1>
+          <p className="mt-1 text-sm text-zinc-600">Review artisan registrations and verify identity documents.</p>
+        </div>
+        <AdminReviewIllustration className="hidden h-24 w-24 shrink-0 sm:block" />
+      </div>
 
       {error && <p className="mb-4 rounded bg-red-50 p-3 text-sm text-red-700">{error}</p>}
       {actionMessage && <p className="mb-4 rounded bg-green-50 p-3 text-sm text-green-700">{actionMessage}</p>}

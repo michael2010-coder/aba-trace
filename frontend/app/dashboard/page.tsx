@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import { useAuth } from '@/lib/auth';
 import { api, ApiError } from '@/lib/api';
 import { CheckCircleIcon, ClockIcon, PackageIcon, PackagePlusIcon, QrCodeIcon } from '@/components/icons';
-import { PassportIllustration } from '@/components/illustrations';
+import { ArtisanPortraitIllustration } from '@/components/illustrations';
 
 interface Artisan {
   artisanId: string;
@@ -98,7 +98,7 @@ export default function DashboardPage() {
               Manage your business profile and digital product passports.
             </p>
           </div>
-          <PassportIllustration className="h-28 w-28 shrink-0 sm:h-32 sm:w-32" />
+          <ArtisanPortraitIllustration className="h-28 w-28 shrink-0 sm:h-32 sm:w-32" />
         </div>
       </div>
 

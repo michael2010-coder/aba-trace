@@ -1,8 +1,10 @@
 import Link from 'next/link';
+import { NotFoundIllustration } from '@/components/illustrations';
 
 export default function NotFound() {
   return (
     <div className="flex flex-1 flex-col items-center justify-center gap-4 bg-zinc-50 px-6 py-24 text-center">
+      <NotFoundIllustration className="h-48 w-48" />
       <h1 className="text-2xl font-bold text-zinc-900">Not found</h1>
       <p className="max-w-sm text-sm text-zinc-600">
         We couldn&apos;t find what you&apos;re looking for. The passport may not exist, or the link may be
