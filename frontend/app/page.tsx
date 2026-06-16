@@ -14,7 +14,7 @@ export default function Home() {
             </div>
             <h1 className="text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl">ABA TRACE</h1>
             <p className="max-w-md text-lg leading-7 text-zinc-600">
-              Digital product passports for artisans in Aba South. Every item gets a
+              Digital product passports for artisans across Abia State. Every item gets a
               tamper-evident record of who made it, where, and from what materials —
               verifiable by anyone with a QR code scan.
             </p>
@@ -42,7 +42,7 @@ export default function Home() {
         <h2 className="text-center text-2xl font-bold text-zinc-900 sm:text-3xl">How it works</h2>
         <p className="mx-auto mt-3 max-w-xl text-center text-zinc-600">
           From the workshop to the customer&apos;s hand, every product carries proof of its
-          origin in Aba.
+          origin in Abia State.
         </p>
 
         <div className="mt-12 grid gap-8 sm:grid-cols-3">

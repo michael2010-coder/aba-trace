@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "ABA TRACE",
-  description: "Digital product passports for Aba South artisans",
+  description: "Digital product passports for artisans across Abia State",
 };
 
 export default function RootLayout({
